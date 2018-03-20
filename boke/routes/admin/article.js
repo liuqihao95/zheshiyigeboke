@@ -48,8 +48,8 @@ router.post('/add', function(req, res, next) {
         if(err){
             console.log(err);
         }else {
-            res.send("添加分类成功<a href='http://localhost:3000/admin/article'>查看分类列表</a>" +
-                "<a href='http://localhost:3000/admin/article/add'>继续提添加分类</a>")
+            res.send("添加分类成功<a href='/admin/article'>查看分类列表</a>" +
+                "<a href='/admin/article/add'>继续提添加分类</a>")
         }
     })
 });
@@ -60,7 +60,7 @@ router.get('/delete', function(req, res) {
         if (err) {
             res.send(err);
         } else {
-            res.send("删除分类成功<a href='http://localhost:3000/admin/article'>查看文章列表</a>")
+            res.send("删除分类成功<a href='/admin/article'>查看文章列表</a>")
         }
     })
 });
